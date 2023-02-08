@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Stream Connectivity Data Management</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/SageRavine.png" data-background-opacity="0.5">
+					<h2>Computational Methods for Image Based Stream Connectivity Classification</h2>
+					<hr>
+					<p class = "medTxt" style="color:azure">Timothy Becker<sup>1</sup>, Mary Becker<sup>2</sup>,
+						Christopher Bellucci<sup>2</sup>, </br>Melissa Czarnowski<sup>2</sup>, Corinne Fitting<sup>2</sup>
+						Alexandria Hibbard<sup>2</sup>, </br>Nicholas Muise<sup>1,*</sup>, Joseph Spada<sup>1,*</sup>, Xuan Thu Dao<sup>1,+</sup>
+					</p>
+					<ol class = "smTxt" style="color:azure;">
+						<li>Department of Computing Sciences, University of Hartford, West Hartford CT</li>
+						<li>CT Dept. of Energy and Environmental Protection, Hartford CT</li><br>
+						* Image Database<br>
+						+ Interactive Image Viewer
+					</ol>
+					<p class ="smTxt" style="color:aqua">
+						NAB 2020, 2022 extended Talk</br>
+					</p>
+					<img src="images/title.png" alt="Flow Management" height="120">
+				</section>
+				<section>
+					<h3>Stream Connectivity</h3>
+					<hr>
+					<img src="images/stream_connectivity.png" alt="Stream Connectivity" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Method</h3>
+					<hr>
+					<img src="images/method.png" alt="Method" height ="450"
+						style= "border: 5px; border-color: whitesmoke;">
+					<div class = "r-hstack">
+					<a class="smTxt" href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/rra.3689">
+						Bellucci, CJ, Becker, ME, Czarnowski, M, Fitting, C. A novel method to evaluate</br>
+						stream connectivity using trail cameras. River Res Applic. 2020; 36: 1504– 1514.
+					</a>
+					</div>
+				</section>
+				<section>
+					<h3>Stream Connectivity Categories</h3>
+					<hr>
+					<img src="images/flow_categories.png" alt="Stream Connectivity" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Stream Connectivity Metrics</h3>
+					<hr>
+					<img src="images/flow_metrics.png" alt="Method" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Monitoring Stream Connectivity with Trail Cameras</h3>
+					<hr>
+					<div class="r-stack">
+						<img src="images/trail_cam_sites_2016.png" alt="Trail Cam Sites 2016" height ="500"
+						class="fragment fade-in-then-out">
+						<img src="images/trail_cam_sites_2017.png" alt="Trail Cam Sites 2017" height ="500"
+						class="fragment fade-in-then-out">
+						<img src="images/trail_cam_sites_2021.png" alt="Trail Cam Sites 2017" height ="500"
+						class="fragment fade-in-then-out">
+					</div>
+				</section>
+
+				<section>
+					<h3>The Problem With A Growing Dataset</h3>
+					<hr>
+					<blockquote class="medTxt">
+						<p>
+							‘Conducting research is a bit like parenting. Raising a child involves <b>a lot of
+							cleaning and tidying, setting standards, and maintaining order,</b>
+							all of which goes completely unnoticed and for which the parent receives absolutely no credit.
+						</p>
+						<p>
+							Similarly, producing a bright, shiny result from the raw beginnings of a
+							research project involves <b>a lot of work that is almost never seen or acknowledged.’</b>
+						</p>
+					</blockquote>
+					<p class="smTxt">
+						-Paul Murrell ‘Introduction to Data Technologies’ (Emphasis Added)
+					</p>
+				</section>
+
+				<section>
+					<h3>Data Management Issues</h3>
+					<hr>
+					<img src="images/method_for_discussion.png" alt="Data Management" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Data Workflow</h3>
+					<hr>
+					<img src="images/workflow.png" alt="Workflow" height ="400"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>Standardizing Metadata<sup>*</sup></h3>
+					<hr>
+					<img src="images/metadata_tools.png" alt="Metadata_Tools" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Capturing and Organizing Data<sup>*</sup></h3>
+					<hr>
+					<img src="images/streamconnect_db.png" alt="DB Schema" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Data Import and Quality Checks<sup>*</sup></h3>
+					<hr>
+					<img src="images/exif.png" alt="Exif" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>Interactive Web Label Viewer (1)<sup>+</sup></h3>
+					<hr>
+					<img src="images/interactive_web_viewer_1.png" alt="Inter1" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Interactive Web Label Viewer (2)<sup>+</sup></h3>
+					<hr>
+					<img src="images/interactive_web_viewer_2.png" alt="Inter2" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>General Stream Image Classification Problem (1)</h3>
+					<hr>
+					<img src="images/classification_train.png" alt="Classification Predict" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>General Stream Image Classification Problem (2)</h3>
+					<hr>
+					<img src="images/classification_predict.png" alt="Classification Predict" height ="300"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>Deep Convolutional Neural Networks (DCNN)</h3>
+					<hr>
+					<img src="images/dcnn_1.png" alt="DCNN" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>DCNN (2)</h3>
+					<hr>
+					<img src="images/dcnn_2.png" alt="DCNN" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>DCNN (3)</h3>
+					<hr>
+					<img src="images/dcnn_3.png" alt="DCNN" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>Image Processing: Resizing</h3>
+					<hr>
+					<img src="images/img_processing_1.png" alt="Image Resizing" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Image Processing: Filtering</h3>
+					<hr>
+					<img src="images/img_processing_2.png" alt="Image Filtering" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>Image Processing: Enhancement</h3>
+					<hr>
+					<img src="images/image_enhancement.JPG" alt="Image Enhancement" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>m-class training: Partitioning</h3>
+					<hr>
+					<img src="images/partitioning.png" alt="Partitioning" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>m-class training: Balancing</h3>
+					<hr>
+					<img src="images/balancing.png" alt="Balancing" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>m-class training: Datasets</h3>
+					<hr>
+					<img src="images/datasets.png" alt="Datasets" height ="500"
+						 style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section>
+					<h3>class training: 2-class f1 =  0.90 / 0.50 (2017-2019 data)<sup>1</sup></h3>
+					<hr>
+					<img src="images/two_class_model.JPG" alt="Two Class Results" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+					<ol class = "smTxt" style="color:azure;">
+						<li>versus 0.60 /0.5 2-class f1 using no image filtering and enhancement on 2017-2018 data</li>
+					</ol>
+				</section>
+				<section>
+					<h3>class training: 6-class f1 =  0.36 / 0.17 (2017-2019 data)<sup>1</sup></h3>
+					<hr>
+					<img src="images/six_class_model.JPG" alt="Six Class Results" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+					<ol class = "smTxt" style="color:azure;">
+						<li>versus 0.18 /0.17 6-class f1 using no image filtering and enhancement on 2017-2018 data</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Science for Environmental Management</h3>
+					<hr>
+					<img src="images/management_policy.png" alt="Policy" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+
+				<section>
+					<h3>Acknowledgments</h3>
+					<hr>
+					<img src="images/acknowledgements.png" alt="Acknowledgements" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+				<section data-background-image="images/SageRavine.png" data-background-opacity="0.5">
+					<h3>Questions/Comments ?</h3>
+					<hr>
+					<img src="images/questions_1.png" alt="Questions" height ="500"
+						style= "border: 5px; border-color: whitesmoke;"></br>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
